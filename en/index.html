@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>d3c0r1x — AI vibe coder & prototyper</title>
+<meta name="description" content="Portfolio: Telegram bots and Mini Apps, LLM and Vision, marketplace integrations. Prototypes and MVPs — from idea to a working product.">
+<meta property="og:title" content="d3c0r1x — AI vibe coder & prototyper">
+<meta property="og:description" content="Telegram bots and Mini Apps, LLM and Vision, marketplaces. Prototypes and MVPs — from idea to a working product.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://d3c0r1x.github.io/en/">
+<meta property="og:image" content="https://d3c0r1x.github.io/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://d3c0r1x.github.io/en/">
+<style>
+  :root{
+    --bg:#0d1117; --bg2:#161b22; --card:#1c2129; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --accent2:#3fb950;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  header{padding:72px 0 48px;text-align:center;border-bottom:1px solid var(--border);background:radial-gradient(ellipse at top, #1a2233 0%, var(--bg) 65%)}
+  h1{font-size:2.4rem;margin-bottom:8px}
+  .tagline{font-size:1.25rem;color:var(--muted);max-width:720px;margin:0 auto 6px}
+  .formula{color:var(--accent);font-family:ui-monospace,Consolas,monospace;font-size:.95rem}
+  .links{margin-top:20px}
+  .btn{display:inline-block;padding:9px 20px;margin:5px;border:1px solid var(--border);border-radius:8px;color:var(--text);background:var(--bg2);transition:.15s}
+  .btn:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+
+  section{padding:48px 0}
+  h2{font-size:1.5rem;margin-bottom:22px;border-bottom:1px solid var(--border);padding-bottom:10px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:.15s;display:flex;flex-direction:column}
+  .card:hover{border-color:#3d444d;transform:translateY(-2px)}
+  .card h3{font-size:1.08rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.93rem;margin-bottom:12px}
+  .card img{width:100%;border-radius:8px;border:1px solid var(--border);margin-bottom:14px;display:block}
+  .chip{display:inline-block;padding:7px 16px;margin:0 6px 10px 0;border:1px solid var(--border);border-radius:999px;background:var(--bg2);color:var(--muted);cursor:pointer;font-size:.9rem;transition:.15s}
+  .chip:hover{border-color:var(--accent);color:var(--text)}
+  .chip.active{background:var(--accent);border-color:var(--accent);color:#0d1117;font-weight:600}
+  .star{float:right;font-size:.85rem;color:var(--muted);font-weight:normal;display:none}
+  .star::before{content:"★ ";color:#e3b341}
+
+  .stack-line{color:var(--muted);margin-bottom:14px}
+  .stack-line b{color:var(--text)}
+
+  footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  @media (max-width:600px){h1{font-size:1.8rem}.tagline{font-size:1.05rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <p><a href="../">← RU</a></p>
+    <h1>d3c0r1x</h1>
+    <p class="tagline"><b>AI vibe coder & prototyper.</b> I take prototypes and MVPs from idea to a working product on my own, using AI tools: Cursor, ChatGPT, OpenRouter and other LLMs.</p>
+    <p class="formula">idea → prompt → working code → debugging → shipped service</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/d3c0r1x">GitHub</a>
+      <a class="btn" href="https://github.com/d3c0r1x?tab=repositories">All repositories</a>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="container">
+    <h2>🚀 Key projects</h2>
+    <div class="filters">
+      <span class="chip active" data-filter="all">All</span>
+      <span class="chip" data-filter="telegram">Telegram bots</span>
+      <span class="chip" data-filter="ai">AI / LLM</span>
+      <span class="chip" data-filter="market">Marketplaces</span>
+      <span class="chip" data-filter="web">Web</span>
+    </div>
+    <div class="grid">
+
+      <div class="card" data-tags="telegram ai market">
+        <img src="../img/smart-shopper.png" alt="Smart Shopper" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a><span class="star" data-repo="smart-shopper"></span></h3>
+        <p>"ChatGPT for marketplaces": search by text and photo, review analysis and price comparison across Ozon, Yandex Market and Wildberries — grounded in real data only. Telegram bot + React Mini App with a shared session state.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">OpenRouter</span><span class="tag">pydantic</span><span class="tag">React</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram market">
+        <img src="../img/marketplace-price-compare.png" alt="Marketplace Price Compare" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/marketplace-price-compare">Marketplace Price Compare</a><span class="star" data-repo="marketplace-price-compare"></span></h3>
+        <p>Price comparison across WB, Ozon and Yandex Market: parallel search, best price and spread. Watch subscriptions notify when the price drops or hits a threshold.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">asyncio.gather</span><span class="tag">SQLite</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram ai market">
+        <img src="../img/ai-review-analyst.png" alt="AI Review Analyst" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/ai-review-analyst">AI Review Analyst</a><span class="star" data-repo="ai-review-analyst"></span></h3>
+        <p>Top-3 problems and top-3 advantages of a product from the last 50 Wildberries reviews, via LLM. Strict JSON enforced by pydantic with retries on schema violations.</p>
+        <div class="tags"><span class="tag">LLM</span><span class="tag">pydantic</span><span class="tag">prompt engineering</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram market">
+        <img src="../img/ozon-price-tracker.png" alt="Ozon Price Tracker" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/ozon-price-tracker">Ozon Price Tracker</a><span class="star" data-repo="ozon-price-tracker"></span></h3>
+        <p>Ozon price and stock monitoring: drop/restore alerts, personal thresholds, "back in stock" notices. Scheduled checks, TTL cache, cooldowns against spam.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Ozon API</span><span class="tag">APScheduler</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram">
+        <img src="../img/telegram-stars-payment-gateway.png" alt="Telegram Stars Payment Gateway" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/telegram-stars-payment-gateway">Telegram Stars Payment Gateway</a><span class="star" data-repo="telegram-stars-payment-gateway"></span></h3>
+        <p>Paid access to AI features: subscriptions via Telegram Stars / YooKassa, PreCheckoutQuery and SuccessfulPayment handling, plans, refunds, trials, auto-expiry.</p>
+        <div class="tags"><span class="tag">Telegram Stars</span><span class="tag">payments</span><span class="tag">aiogram 3</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram market">
+        <img src="../img/ozon-seller-bot.png" alt="Ozon Seller Bot" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/ozon-seller-bot">Ozon Seller Bot</a><span class="star" data-repo="ozon-seller-bot"></span></h3>
+        <p>MVP bot for Ozon sellers: daily store summary in Telegram — revenue, orders, stock control, price-drop and rating alerts, FBS shipments. Seller API client with a deterministic demo mode (no keys needed).</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Seller API</span><span class="tag">SQLite</span><span class="tag">MVP</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram ai">
+        <img src="../img/finance-bot.png" alt="Finance Bot" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a><span class="star" data-repo="finance-bot"></span></h3>
+        <p>Expense and loan tracking: receipts are read by a local Vision model (Ollama) and Tesseract — the winner is picked by arithmetic. Budgets, debts, reports, a Tkinter dashboard.</p>
+        <div class="tags"><span class="tag">Ollama</span><span class="tag">Vision LLM</span><span class="tag">Tesseract</span></div>
+      </div>
+
+      <div class="card" data-tags="web">
+        <img src="../img/paint-by-numbers.png" alt="Paint by Numbers" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a><span class="star" data-repo="paint-by-numbers"></span></h3>
+        <p>Photo → paint-by-numbers with brush painting. SLIC superpixels and auto-k k-means in a Web Worker, React + TypeScript. <a href="https://d3c0r1x.github.io/paint-by-numbers/">Live demo →</a></p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Web Worker</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram market">
+        <img src="../img/wb-price-tracker.png" alt="WB Price Tracker" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/wb-price-tracker">WB Price Tracker</a><span class="star" data-repo="wb-price-tracker"></span></h3>
+        <p>Wildberries price and stock monitoring with daily checks and notifications; price history in SQLite, anti-bot handling via curl_cffi.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">curl_cffi</span><span class="tag">SQLite</span></div>
+      </div>
+
+      <div class="card" data-tags="telegram">
+        <img src="../img/learning-projects.png" alt="Learning Projects" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/learning-projects">Learning Projects</a><span class="star" data-repo="learning-projects"></span></h3>
+        <p>12 Python training projects from a spec: price trackers, PDF reports, quizzes, weather, central-bank rates, news digests and the "Smart Shopper" assistant. Index, validator, code dump.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">aiogram 3</span><span class="tag">portfolio</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="container">
+    <h2>🛠 Stack</h2>
+    <p class="stack-line"><b>Backend:</b> Python 3.11+, FastAPI, TypeScript, React</p>
+    <p class="stack-line"><b>Telegram:</b> aiogram 3, Mini App (React + Vite), Telegram Stars</p>
+    <p class="stack-line"><b>AI/LLM:</b> OpenRouter, YandexGPT, Ollama (LLM + Vision), prompt engineering, strict JSON via pydantic</p>
+    <p class="stack-line"><b>Integrations:</b> Ozon, Wildberries, Yandex Market, Open-Meteo, CBR, RSS/Atom, PDF</p>
+    <p class="stack-line"><b>Infrastructure:</b> SQLite (aiosqlite), APScheduler, Docker, GitHub Actions, pytest</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>github.com/<a href="https://github.com/d3c0r1x">d3c0r1x</a> · portfolio, continuously updated</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.chip').forEach(ch => {
+    ch.addEventListener('click', () => {
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      ch.classList.add('active');
+      const f = ch.dataset.filter;
+      document.querySelectorAll('#projects .card').forEach(card => {
+        card.style.display = (f === 'all' || (card.dataset.tags || '').split(' ').includes(f)) ? '' : 'none';
+      });
+    });
+  });
+  (async () => {
+    for (const el of document.querySelectorAll('[data-repo]')) {
+      try {
+        const r = await fetch(`https://api.github.com/repos/d3c0r1x/${el.dataset.repo}`);
+        if (!r.ok) continue;
+        const j = await r.json();
+        el.textContent = j.stargazers_count;
+        el.style.display = 'inline-block';
+      } catch (e) {}
+    }
+  })();
+</script>
+</body>
+</html>
