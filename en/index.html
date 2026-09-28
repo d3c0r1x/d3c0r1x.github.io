@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>d3c0r1x — AI-first product builder</title>
+<title>d3c0r1x — AI Product Developer / Vibe Coder</title>
 <meta name="description" content="I take a business task and ship a working product: AI integrations and LLM agents, automation, FastAPI backends, React frontends. Portfolio of three flagships plus an agent automation platform.">
 <meta property="og:title" content="d3c0r1x — AI-first product builder">
 <meta property="og:description" content="Task → architecture → working product. AI integrations and agents, automation, FastAPI and React. Three flagships and an agent automation platform.">
@@ -61,7 +61,7 @@
   <div class="container">
     <p><a href="../">← RU</a></p>
     <h1>d3c0r1x</h1>
-    <p class="tagline"><b>AI-first product builder.</b> I take a business task and ship a working product: architecture, API and model integrations, debugging, tests, final behaviour. AI tools are an accelerator, not a replacement for validation.</p>
+    <p class="tagline"><b>AI Product Developer / Vibe Coder.</b> I take a business task and ship a working product: architecture, API and model integrations, debugging, tests, final behaviour. AI tools are an accelerator, not a replacement for validation.</p>
     <p class="formula">task → architecture → prototype → tests → shipped service</p>
     <p class="tagline" style="font-size:1rem;margin-top:10px">Three flagships — <a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a> ·
       <a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a> ·
@@ -77,84 +77,58 @@
 
 <section id="projects">
   <div class="container">
-    <h2>🚀 Key projects</h2>
-    <div class="filters">
-      <span class="chip active" data-filter="all">All</span>
-      <span class="chip" data-filter="telegram">Telegram bots</span>
-      <span class="chip" data-filter="ai">AI / LLM</span>
-      <span class="chip" data-filter="market">Marketplaces</span>
-      <span class="chip" data-filter="web">Web</span>
-      <span class="chip" data-filter="automation">Automation</span>
-    </div>
+    <h2>🚀 Featured projects</h2>
     <div class="grid">
-
-      <div class="card" data-tags="ai web automation">
+      <div class="card" data-tags="ai automation web">
         <img src="../img/ai-automation-platform.png" alt="AI Automation Platform" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ai-automation-platform">AI Automation Platform</a><span class="star" data-repo="ai-automation-platform"></span></h3>
-        <p>"Find 20 items under 5000 ₽, compare them, pick 5, build a table and send it" — a task in plain words. The agent plans tool calls, the plan is validated before running, execution survives a crash, and anything leaving the machine waits for human approval. FastAPI, PostgreSQL, Redis, Playwright, React dashboard.</p>
-        <div class="tags"><span class="tag">LLM tool calling</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Playwright</span><span class="tag">React</span></div>
+        <h3><a href="https://github.com/d3c0r1x/ai-automation-platform">AI Automation Platform</a></h3>
+        <p><b>Task → plan → tools → result.</b> An MVP platform where a natural-language request becomes a validated plan, queued execution, worker steps and a final report, with a human approval gate before external side effects.</p>
+        <div class="tags"><span class="tag">FastAPI</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Playwright</span><span class="tag">React</span></div>
       </div>
 
-      <div class="card" data-tags="telegram ai market">
+      <div class="card" data-tags="ai telegram market">
         <img src="../img/smart-shopper.png" alt="Smart Shopper" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a><span class="star" data-repo="smart-shopper"></span></h3>
-        <p>"ChatGPT for marketplaces": search by text and photo, review analysis and price comparison across Ozon, Yandex Market and Wildberries — grounded in real data only. Telegram bot + React Mini App with a shared session state.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">OpenRouter</span><span class="tag">pydantic</span><span class="tag">React</span></div>
+        <h3><a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a></h3>
+        <p><b>AI shopping assistant.</b> Text/photo search, real Ozon/Yandex Market/Wildberries data, price comparison and review-based requirement checks. Telegram and a React Mini App share one backend and session state.</p>
+        <div class="tags"><span class="tag">LLM</span><span class="tag">Vision</span><span class="tag">Python</span><span class="tag">React</span></div>
       </div>
 
-      <div class="card" data-tags="telegram market">
-        <img src="../img/marketplace-price-compare.png" alt="Marketplace Price Compare" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/marketplace-price-compare">Marketplace Price Compare</a><span class="star" data-repo="marketplace-price-compare"></span></h3>
-        <p>Price comparison across WB, Ozon and Yandex Market: parallel search, best price and spread. Watch subscriptions notify when the price drops or hits a threshold.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">asyncio.gather</span><span class="tag">SQLite</span></div>
+      <div class="card" data-tags="ai automation">
+        <h3><a href="https://github.com/d3c0r1x/arbitrage-monitor">MEXC × DEX Arbitrage Monitor</a></h3>
+        <p><b>Async arbitrage monitor.</b> On-chain quotes, pool discovery, fees/slippage, trade-size sweep, signals and web dashboard. The repository shows V1→V6 evolution with dedicated tests and review iterations.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">async</span><span class="tag">EVM</span><span class="tag">Web3</span></div>
       </div>
 
-      <div class="card" data-tags="telegram ai market">
-        <img src="../img/ai-review-analyst.png" alt="AI Review Analyst" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ai-review-analyst">AI Review Analyst</a><span class="star" data-repo="ai-review-analyst"></span></h3>
-        <p>Top-3 problems and top-3 advantages of a product from the last 50 Wildberries reviews, via LLM. Strict JSON enforced by pydantic with retries on schema violations.</p>
-        <div class="tags"><span class="tag">LLM</span><span class="tag">pydantic</span><span class="tag">prompt engineering</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram market">
-        <img src="../img/ozon-price-tracker.png" alt="Ozon Price Tracker" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ozon-price-tracker">Ozon Price Tracker</a><span class="star" data-repo="ozon-price-tracker"></span></h3>
-        <p>Ozon price and stock monitoring: drop/restore alerts, personal thresholds, "back in stock" notices. Scheduled checks, TTL cache, cooldowns against spam.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Ozon API</span><span class="tag">APScheduler</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram">
-        <img src="../img/telegram-stars-payment-gateway.png" alt="Telegram Stars Payment Gateway" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/telegram-stars-payment-gateway">Telegram Stars Payment Gateway</a><span class="star" data-repo="telegram-stars-payment-gateway"></span></h3>
-        <p>Paid access to AI features: subscriptions via Telegram Stars / YooKassa, PreCheckoutQuery and SuccessfulPayment handling, plans, refunds, trials, auto-expiry.</p>
-        <div class="tags"><span class="tag">Telegram Stars</span><span class="tag">payments</span><span class="tag">aiogram 3</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram market">
-        <img src="../img/ozon-seller-bot.png" alt="Ozon Seller Bot" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ozon-seller-bot">Ozon Seller Bot</a><span class="star" data-repo="ozon-seller-bot"></span></h3>
-        <p>MVP bot for Ozon sellers: daily store summary in Telegram — revenue, orders, stock control, price-drop and rating alerts, FBS shipments. Seller API client with a deterministic demo mode (no keys needed).</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Seller API</span><span class="tag">SQLite</span><span class="tag">MVP</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram ai">
+      <div class="card" data-tags="ai telegram">
         <img src="../img/finance-bot.png" alt="Finance Bot" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a><span class="star" data-repo="finance-bot"></span></h3>
-        <p>Expense and loan tracking: receipts are read by a local Vision model (Ollama) and Tesseract — the winner is picked by arithmetic. Budgets, debts, reports, a Tkinter dashboard.</p>
-        <div class="tags"><span class="tag">Ollama</span><span class="tag">Vision LLM</span><span class="tag">Tesseract</span></div>
+        <h3><a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a></h3>
+        <p><b>Local-first finance assistant.</b> A Vision model and Tesseract read receipts independently, then arithmetic validation checks the result. Includes budgets, debts, subscriptions, reports and a desktop panel.</p>
+        <div class="tags"><span class="tag">Ollama</span><span class="tag">Vision</span><span class="tag">OCR</span><span class="tag">SQLite</span></div>
       </div>
 
       <div class="card" data-tags="web">
         <img src="../img/paint-by-numbers.png" alt="Paint by Numbers" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a><span class="star" data-repo="paint-by-numbers"></span></h3>
-        <p>Photo → paint-by-numbers with brush painting. SLIC superpixels and auto-k k-means in a Web Worker, React + TypeScript. <a href="https://d3c0r1x.github.io/paint-by-numbers/">Live demo →</a></p>
-        <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Web Worker</span></div>
+        <h3><a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a> · <a href="https://d3c0r1x.github.io/paint-by-numbers/">demo</a></h3>
+        <p><b>Photo → paint-by-numbers in the browser.</b> Image-processing pipeline, SLIC, k-means, Web Worker, Canvas, IndexedDB and a SwiftUI/PencilKit pilot.</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Canvas</span><span class="tag">Web Worker</span></div>
       </div>
 
+      <div class="card" data-tags="telegram market automation">
+        <img src="../img/ozon-seller-bot.png" alt="Ozon Seller Bot" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/ozon-seller-bot">Ozon Seller Bot</a></h3>
+        <p><b>Marketplace seller automation.</b> Revenue, orders, stock, top products and alerts through the Ozon Seller API. Includes a deterministic demo mode so it can be shown without store credentials.</p>
+        <div class="tags"><span class="tag">Ozon API</span><span class="tag">Telegram</span><span class="tag">SQLite</span><span class="tag">MVP</span></div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:40px">Smaller projects</h2>
+    <div class="grid">
+      <div class="card"><h3><a href="https://github.com/d3c0r1x/telegram-stars-payment-gateway">Telegram Stars Payment Gateway</a></h3><p>Subscriptions, payments, refunds and server-side payload validation.</p></div>
+      <div class="card"><h3><a href="https://github.com/d3c0r1x/marketplace-price-compare">Marketplace Price Compare</a></h3><p>Parallel search, normalisation, deduplication and price watches.</p></div>
+      <div class="card"><h3><a href="https://github.com/d3c0r1x/ozon-price-tracker">Ozon Price Tracker</a></h3><p>Price/stock monitoring and scheduled alerts.</p></div>
     </div>
   </div>
 </section>
-
 <section id="process">
   <div class="container">
     <h2>⚡ How I work</h2>
