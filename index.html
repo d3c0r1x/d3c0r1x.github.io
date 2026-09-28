@@ -34,10 +34,11 @@
   section{padding:48px 0}
   h2{font-size:1.5rem;margin-bottom:22px;border-bottom:1px solid var(--border);padding-bottom:10px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:.15s}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:.15s;display:flex;flex-direction:column}
   .card:hover{border-color:#3d444d;transform:translateY(-2px)}
   .card h3{font-size:1.08rem;margin-bottom:8px}
   .card p{color:var(--muted);font-size:.93rem;margin-bottom:12px}
+  .card img{width:100%;border-radius:8px;border:1px solid var(--border);margin-bottom:14px;display:block}
   .tags{display:flex;flex-wrap:wrap;gap:6px}
   .tag{font-size:.72rem;padding:3px 9px;border-radius:999px;background:var(--bg2);border:1px solid var(--border);color:var(--muted)}
 
@@ -69,60 +70,70 @@
     <div class="grid">
 
       <div class="card">
+        <img src="img/smart-shopper.png" alt="Smart Shopper" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a></h3>
         <p>«ChatGPT для маркетплейсов»: поиск по тексту и фото, анализ отзывов и сравнение цен на Ozon, Яндекс Маркете и Wildberries — только реальные данные, без выдумок (grounding). Telegram-бот + Mini App на React с общим состоянием сессии.</p>
         <div class="tags"><span class="tag">aiogram 3</span><span class="tag">OpenRouter</span><span class="tag">pydantic</span><span class="tag">React</span><span class="tag">Mini App</span></div>
       </div>
 
       <div class="card">
+        <img src="img/marketplace-price-compare.png" alt="Marketplace Price Compare" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/marketplace-price-compare">Marketplace Price Compare</a></h3>
         <p>Сравнение цен WB, Ozon и Яндекс Маркета: параллельный поиск во все маркетплейсы, лучшая цена и разброс. Watch-подписки: уведомление, когда цена упала или достигла порога.</p>
         <div class="tags"><span class="tag">aiogram 3</span><span class="tag">asyncio.gather</span><span class="tag">SQLite</span><span class="tag">APScheduler</span></div>
       </div>
 
       <div class="card">
+        <img src="img/ai-review-analyst.png" alt="AI Review Analyst" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/ai-review-analyst">AI Review Analyst</a></h3>
         <p>Топ-3 проблемы и топ-3 преимущества товара по 50 отзывам Wildberries через LLM. Строгий JSON на pydantic с ретраями при нарушении схемы.</p>
         <div class="tags"><span class="tag">LLM</span><span class="tag">pydantic</span><span class="tag">prompt engineering</span></div>
       </div>
 
       <div class="card">
+        <img src="img/ozon-price-tracker.png" alt="Ozon Price Tracker" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/ozon-price-tracker">Ozon Price Tracker</a></h3>
         <p>Отслеживание цен и остатков Ozon: уведомления о падении/росте, персональные пороги, «снова в наличии». Проверки по расписанию, кулдаун против спама.</p>
         <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Ozon API</span><span class="tag">APScheduler</span></div>
       </div>
 
       <div class="card">
+        <img src="img/telegram-stars-payment-gateway.png" alt="Telegram Stars Payment Gateway" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/telegram-stars-payment-gateway">Telegram Stars Payment Gateway</a></h3>
         <p>Платный доступ к AI-функциям: подписка через Telegram Stars / ЮKassa, PreCheckoutQuery и SuccessfulPayment, тарифы, возвраты, пробный период.</p>
         <div class="tags"><span class="tag">Telegram Stars</span><span class="tag">payments</span><span class="tag">aiogram 3</span></div>
       </div>
 
       <div class="card">
+        <img src="img/ozon-seller-bot.png" alt="Ozon Seller Bot" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/ozon-seller-bot">Ozon Seller Bot</a></h3>
         <p>MVP-бот для продавцов Ozon: дневная сводка магазина — выручка, заказы, контроль остатков (🔴/🟡), топ товаров. Клиент Seller API с детерминированным демо-режимом без ключей.</p>
         <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Seller API</span><span class="tag">SQLite</span><span class="tag">MVP</span></div>
       </div>
 
       <div class="card">
+        <img src="img/finance-bot.png" alt="Finance Bot" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a></h3>
         <p>Учёт расходов и кредитов: фото чека читают локальная Vision-модель (Ollama qwen3-vl) и Tesseract, победитель — по арифметике. Бюджет, долги, отчёты, панель на Tkinter.</p>
         <div class="tags"><span class="tag">Ollama</span><span class="tag">Vision LLM</span><span class="tag">Tesseract</span><span class="tag">Tkinter</span></div>
       </div>
 
       <div class="card">
+        <img src="img/paint-by-numbers.png" alt="Paint by Numbers" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a></h3>
         <p>Фото → раскраска по номерам с рисованием кистью. SLIC-суперпиксели и k-means с авто-k в Web Worker, React + TypeScript. <a href="https://d3c0r1x.github.io/paint-by-numbers/">Живое демо →</a></p>
         <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Web Worker</span></div>
       </div>
 
       <div class="card">
+        <img src="img/wb-price-tracker.png" alt="WB Price Tracker" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/wb-price-tracker">WB Price Tracker</a></h3>
         <p>Мониторинг цен и остатков Wildberries с ежедневными проверками и уведомлениями; история цен в SQLite, работа с антибот-защитой через curl_cffi.</p>
         <div class="tags"><span class="tag">aiogram 3</span><span class="tag">curl_cffi</span><span class="tag">SQLite</span></div>
       </div>
 
       <div class="card">
+        <img src="img/learning-projects.png" alt="Learning Projects" loading="lazy">
         <h3><a href="https://github.com/d3c0r1x/learning-projects">Learning Projects</a></h3>
         <p>12 учебных проектов по ТЗ: трекеры цен, PDF-отчёты, викторины, погода, курсы ЦБ, дайджесты новостей и «Умный Шоппер». Индекс, валидатор, сводный дамп кода.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">aiogram 3</span><span class="tag">portfolio</span></div>
