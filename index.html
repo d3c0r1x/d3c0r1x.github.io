@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>d3c0r1x — AI-first продукт-билдер и вайб-кодер</title>
+<title>d3c0r1x — AI Product Developer / Vibe Coder</title>
 <meta name="description" content="Беру бизнес-задачу и довожу до рабочего продукта: AI-интеграции и LLM, автоматизация и агенты, backend на FastAPI, фронтенд на React. Портфолио из трёх флагманов и платформы автоматизации.">
 <meta property="og:title" content="d3c0r1x — AI-first продукт-билдер">
 <meta property="og:description" content="Задачу → архитектуру → рабочий продукт. AI-интеграции и агенты, автоматизация, FastAPI и React. Три флагмана и платформа автоматизации на агентах.">
@@ -62,8 +62,8 @@
   <div class="container">
     <p><a href="en/">EN</a> · RU</p>
     <h1>d3c0r1x</h1>
-    <p class="tagline"><b>AI-first продукт-билдер.</b> Беру бизнес-задачу и довожу её до рабочего продукта: архитектура, интеграции API и моделей, отладка, тесты, финальное поведение. AI-инструменты — ускоритель, а не замена проверке.</p>
-    <p class="formula">задача → архитектура → прототип → тесты → рабочий сервис</p>
+    <p class="tagline"><b>AI Product Developer / Vibe Coder.</b> Беру бизнес-задачу и довожу её до рабочего продукта: архитектура, интеграции API и моделей, отладка, тесты, финальное поведение. AI-инструменты — ускоритель, а не замена проверке.</p>
+    <p class="formula">задача → архитектура → AI-assisted development → тесты → рабочий сервис</p>
     <p class="tagline" style="font-size:1rem;margin-top:10px">Три флагмана — <a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a> ·
       <a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a> ·
       <a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a> — и
@@ -80,83 +80,57 @@
 <section id="projects">
   <div class="container">
     <h2>🚀 Ключевые проекты</h2>
-    <div class="filters">
-      <span class="chip active" data-filter="all">Все</span>
-      <span class="chip" data-filter="telegram">Telegram-боты</span>
-      <span class="chip" data-filter="ai">AI / LLM</span>
-      <span class="chip" data-filter="market">Маркетплейсы</span>
-      <span class="chip" data-filter="web">Web</span>
-      <span class="chip" data-filter="automation">Автоматизация</span>
-    </div>
     <div class="grid">
-
-      <div class="card" data-tags="ai web automation">
+      <div class="card" data-tags="ai automation web">
         <img src="img/ai-automation-platform.png" alt="AI Automation Platform" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ai-automation-platform">AI Automation Platform</a><span class="star" data-repo="ai-automation-platform"></span></h3>
-        <p>«Найди 20 товаров до 5000 ₽, сравни, выбери 5, составь таблицу и пришли» — задача обычными словами. Агент планирует вызовы инструментов, план проверяется до запуска, выполнение переживает сбой, отправка наружу ждёт подтверждения. FastAPI, PostgreSQL, Redis, Playwright, React-дашборд.</p>
-        <div class="tags"><span class="tag">LLM tool calling</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Playwright</span><span class="tag">React</span></div>
+        <h3><a href="https://github.com/d3c0r1x/ai-automation-platform">AI Automation Platform</a></h3>
+        <p><b>Задача → план → инструменты → результат.</b> MVP-платформа, где запрос на естественном языке превращается в проверенный план, ставится в очередь, исполняется воркером и выдаёт результат. Перед внешним действием можно остановиться и попросить подтверждение человека.</p>
+        <div class="tags"><span class="tag">FastAPI</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Playwright</span><span class="tag">React</span></div>
       </div>
 
-      <div class="card" data-tags="telegram ai market">
+      <div class="card" data-tags="ai telegram market">
         <img src="img/smart-shopper.png" alt="Smart Shopper" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a><span class="star" data-repo="smart-shopper"></span></h3>
-        <p>«ChatGPT для маркетплейсов»: поиск по тексту и фото, анализ отзывов и сравнение цен на Ozon, Яндекс Маркете и Wildberries — только реальные данные, без выдумок (grounding). Telegram-бот + Mini App на React с общим состоянием сессии.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">OpenRouter</span><span class="tag">pydantic</span><span class="tag">React</span><span class="tag">Mini App</span></div>
+        <h3><a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a></h3>
+        <p><b>AI-ассистент покупок.</b> Поиск по тексту и фото, реальные данные Ozon/Яндекс Маркета/Wildberries, сравнение цен и проверка требований по отзывам. Telegram + React Mini App используют общий backend и состояние сессии.</p>
+        <div class="tags"><span class="tag">LLM</span><span class="tag">Vision</span><span class="tag">Python</span><span class="tag">React</span></div>
       </div>
 
-      <div class="card" data-tags="telegram market">
-        <img src="img/marketplace-price-compare.png" alt="Marketplace Price Compare" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/marketplace-price-compare">Marketplace Price Compare</a><span class="star" data-repo="marketplace-price-compare"></span></h3>
-        <p>Сравнение цен WB, Ozon и Яндекс Маркета: параллельный поиск во все маркетплейсы, лучшая цена и разброс. Watch-подписки: уведомление, когда цена упала или достигла порога.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">asyncio.gather</span><span class="tag">SQLite</span><span class="tag">APScheduler</span></div>
+      <div class="card" data-tags="ai automation">
+        <h3><a href="https://github.com/d3c0r1x/arbitrage-monitor">MEXC × DEX Arbitrage Monitor</a></h3>
+        <p><b>Асинхронный монитор арбитражных возможностей.</b> On-chain котировки, pool discovery, fees/slippage, подбор размера сделки, сигналы и web-dashboard. Репозиторий показывает развитие проекта от V1 до V6 с отдельными тестами и ревью.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">async</span><span class="tag">EVM</span><span class="tag">Web3</span></div>
       </div>
 
-      <div class="card" data-tags="telegram ai market">
-        <img src="img/ai-review-analyst.png" alt="AI Review Analyst" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ai-review-analyst">AI Review Analyst</a><span class="star" data-repo="ai-review-analyst"></span></h3>
-        <p>Топ-3 проблемы и топ-3 преимущества товара по 50 отзывам Wildberries через LLM. Строгий JSON на pydantic с ретраями при нарушении схемы.</p>
-        <div class="tags"><span class="tag">LLM</span><span class="tag">pydantic</span><span class="tag">prompt engineering</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram market">
-        <img src="img/ozon-price-tracker.png" alt="Ozon Price Tracker" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ozon-price-tracker">Ozon Price Tracker</a><span class="star" data-repo="ozon-price-tracker"></span></h3>
-        <p>Отслеживание цен и остатков Ozon: уведомления о падении/росте, персональные пороги, «снова в наличии». Проверки по расписанию, кулдаун против спама.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Ozon API</span><span class="tag">APScheduler</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram">
-        <img src="img/telegram-stars-payment-gateway.png" alt="Telegram Stars Payment Gateway" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/telegram-stars-payment-gateway">Telegram Stars Payment Gateway</a><span class="star" data-repo="telegram-stars-payment-gateway"></span></h3>
-        <p>Платный доступ к AI-функциям: подписка через Telegram Stars / ЮKassa, PreCheckoutQuery и SuccessfulPayment, тарифы, возвраты, пробный период.</p>
-        <div class="tags"><span class="tag">Telegram Stars</span><span class="tag">payments</span><span class="tag">aiogram 3</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram market">
-        <img src="img/ozon-seller-bot.png" alt="Ozon Seller Bot" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/ozon-seller-bot">Ozon Seller Bot</a><span class="star" data-repo="ozon-seller-bot"></span></h3>
-        <p>MVP-бот для продавцов Ozon: дневная сводка магазина — выручка, заказы, контроль остатков (🔴/🟡), топ товаров. Клиент Seller API с детерминированным демо-режимом без ключей.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Seller API</span><span class="tag">SQLite</span><span class="tag">MVP</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram ai">
+      <div class="card" data-tags="ai telegram">
         <img src="img/finance-bot.png" alt="Finance Bot" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a><span class="star" data-repo="finance-bot"></span></h3>
-        <p>Учёт расходов и кредитов: фото чека читают локальная Vision-модель (Ollama qwen3-vl) и Tesseract, победитель — по арифметике. Бюджет, долги, отчёты, панель на Tkinter.</p>
-        <div class="tags"><span class="tag">Ollama</span><span class="tag">Vision LLM</span><span class="tag">Tesseract</span><span class="tag">Tkinter</span></div>
+        <h3><a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a></h3>
+        <p><b>Local-first финансовый ассистент.</b> Vision-модель и Tesseract независимо читают чек, затем результат проверяется арифметикой. Есть бюджеты, долги, подписки, отчёты и desktop-панель с общей бизнес-логикой.</p>
+        <div class="tags"><span class="tag">Ollama</span><span class="tag">Vision</span><span class="tag">OCR</span><span class="tag">SQLite</span></div>
       </div>
 
       <div class="card" data-tags="web">
         <img src="img/paint-by-numbers.png" alt="Paint by Numbers" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a><span class="star" data-repo="paint-by-numbers"></span></h3>
-        <p>Фото → раскраска по номерам с рисованием кистью. SLIC-суперпиксели и k-means с авто-k в Web Worker, React + TypeScript. <a href="https://d3c0r1x.github.io/paint-by-numbers/">Живое демо →</a></p>
-        <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Web Worker</span></div>
+        <h3><a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a> · <a href="https://d3c0r1x.github.io/paint-by-numbers/">демо</a></h3>
+        <p><b>Фото → раскраска по номерам прямо в браузере.</b> Image-processing pipeline, SLIC, k-means, Web Worker, Canvas, IndexedDB и экспериментальный SwiftUI/PencilKit-клиент.</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Canvas</span><span class="tag">Web Worker</span></div>
       </div>
 
+      <div class="card" data-tags="telegram market automation">
+        <img src="img/ozon-seller-bot.png" alt="Ozon Seller Bot" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/ozon-seller-bot">Ozon Seller Bot</a></h3>
+        <p><b>Автоматизация для продавца Ozon.</b> Выручка, заказы, остатки, top products и алерты через Seller API. Есть детерминированный demo mode, поэтому сценарий можно показать без ключей магазина.</p>
+        <div class="tags"><span class="tag">Ozon API</span><span class="tag">Telegram</span><span class="tag">SQLite</span><span class="tag">MVP</span></div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:40px">Небольшие проекты</h2>
+    <div class="grid">
+      <div class="card"><h3><a href="https://github.com/d3c0r1x/telegram-stars-payment-gateway">Telegram Stars Payment Gateway</a></h3><p>Подписки, платежи, возвраты и серверная проверка payload.</p></div>
+      <div class="card"><h3><a href="https://github.com/d3c0r1x/marketplace-price-compare">Marketplace Price Compare</a></h3><p>Параллельный поиск, нормализация, дедупликация и мониторинг цен.</p></div>
+      <div class="card"><h3><a href="https://github.com/d3c0r1x/ozon-price-tracker">Ozon Price Tracker</a></h3><p>Мониторинг цены/остатка и уведомления по расписанию.</p></div>
     </div>
   </div>
 </section>
-
 <section id="process">
   <div class="container">
     <h2>⚡ Как я работаю</h2>
