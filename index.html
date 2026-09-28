@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>d3c0r1x — AI вайб-кодер и прототипист</title>
+<meta name="description" content="Портфолио: Telegram-боты и Mini Apps, LLM и Vision, интеграции маркетплейсов. Прототипы и MVP — от идеи до работающего сервиса.">
+<style>
+  :root{
+    --bg:#0d1117; --bg2:#161b22; --card:#1c2129; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --accent2:#3fb950;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  header{padding:72px 0 48px;text-align:center;border-bottom:1px solid var(--border);background:radial-gradient(ellipse at top, #1a2233 0%, var(--bg) 65%)}
+  h1{font-size:2.4rem;margin-bottom:8px}
+  .tagline{font-size:1.25rem;color:var(--muted);max-width:720px;margin:0 auto 6px}
+  .formula{color:var(--accent);font-family:ui-monospace,Consolas,monospace;font-size:.95rem}
+  .links{margin-top:20px}
+  .btn{display:inline-block;padding:9px 20px;margin:5px;border:1px solid var(--border);border-radius:8px;color:var(--text);background:var(--bg2);transition:.15s}
+  .btn:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+
+  section{padding:48px 0}
+  h2{font-size:1.5rem;margin-bottom:22px;border-bottom:1px solid var(--border);padding-bottom:10px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:.15s}
+  .card:hover{border-color:#3d444d;transform:translateY(-2px)}
+  .card h3{font-size:1.08rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.93rem;margin-bottom:12px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:.72rem;padding:3px 9px;border-radius:999px;background:var(--bg2);border:1px solid var(--border);color:var(--muted)}
+
+  .stack-line{color:var(--muted);margin-bottom:14px}
+  .stack-line b{color:var(--text)}
+
+  footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  @media (max-width:600px){h1{font-size:1.8rem}.tagline{font-size:1.05rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>d3c0r1x</h1>
+    <p class="tagline"><b>AI вайб-кодер и прототипист.</b> Довожу прототипы и MVP от идеи до рабочего продукта с помощью AI-инструментов: Cursor, ChatGPT, OpenRouter и другие LLM.</p>
+    <p class="formula">идея → промпт → рабочий код → отладка → работающий сервис</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/d3c0r1x">GitHub</a>
+      <a class="btn" href="https://github.com/d3c0r1x?tab=repositories">Все репозитории</a>
+      <a class="btn" href="https://github.com/d3c0r1x/d3c0r1x">Профиль README</a>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="container">
+    <h2>🚀 Ключевые проекты</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a></h3>
+        <p>«ChatGPT для маркетплейсов»: поиск по тексту и фото, анализ отзывов и сравнение цен на Ozon, Яндекс Маркете и Wildberries — только реальные данные, без выдумок (grounding). Telegram-бот + Mini App на React с общим состоянием сессии.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">OpenRouter</span><span class="tag">pydantic</span><span class="tag">React</span><span class="tag">Mini App</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/marketplace-price-compare">Marketplace Price Compare</a></h3>
+        <p>Сравнение цен WB, Ozon и Яндекс Маркета: параллельный поиск во все маркетплейсы, лучшая цена и разброс. Watch-подписки: уведомление, когда цена упала или достигла порога.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">asyncio.gather</span><span class="tag">SQLite</span><span class="tag">APScheduler</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/ai-review-analyst">AI Review Analyst</a></h3>
+        <p>Топ-3 проблемы и топ-3 преимущества товара по 50 отзывам Wildberries через LLM. Строгий JSON на pydantic с ретраями при нарушении схемы.</p>
+        <div class="tags"><span class="tag">LLM</span><span class="tag">pydantic</span><span class="tag">prompt engineering</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/ozon-price-tracker">Ozon Price Tracker</a></h3>
+        <p>Отслеживание цен и остатков Ozon: уведомления о падении/росте, персональные пороги, «снова в наличии». Проверки по расписанию, кулдаун против спама.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">Ozon API</span><span class="tag">APScheduler</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/telegram-stars-payment-gateway">Telegram Stars Payment Gateway</a></h3>
+        <p>Платный доступ к AI-функциям: подписка через Telegram Stars / ЮKassa, PreCheckoutQuery и SuccessfulPayment, тарифы, возвраты, пробный период.</p>
+        <div class="tags"><span class="tag">Telegram Stars</span><span class="tag">payments</span><span class="tag">aiogram 3</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a></h3>
+        <p>Учёт расходов и кредитов: фото чека читают локальная Vision-модель (Ollama qwen3-vl) и Tesseract, победитель — по арифметике. Бюджет, долги, отчёты, панель на Tkinter.</p>
+        <div class="tags"><span class="tag">Ollama</span><span class="tag">Vision LLM</span><span class="tag">Tesseract</span><span class="tag">Tkinter</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a></h3>
+        <p>Фото → раскраска по номерам с рисованием кистью. SLIC-суперпиксели и k-means с авто-k в Web Worker, React + TypeScript. <a href="https://d3c0r1x.github.io/paint-by-numbers/">Живое демо →</a></p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Web Worker</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/wb-price-tracker">WB Price Tracker</a></h3>
+        <p>Мониторинг цен и остатков Wildberries с ежедневными проверками и уведомлениями; история цен в SQLite, работа с антибот-защитой через curl_cffi.</p>
+        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">curl_cffi</span><span class="tag">SQLite</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/d3c0r1x/learning-projects">Learning Projects</a></h3>
+        <p>12 учебных проектов по ТЗ: трекеры цен, PDF-отчёты, викторины, погода, курсы ЦБ, дайджесты новостей и «Умный Шоппер». Индекс, валидатор, сводный дамп кода.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">aiogram 3</span><span class="tag">portfolio</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="container">
+    <h2>🛠 Стек</h2>
+    <p class="stack-line"><b>Backend:</b> Python 3.11+, FastAPI, TypeScript, React</p>
+    <p class="stack-line"><b>Telegram:</b> aiogram 3, Mini App (React + Vite), Telegram Stars</p>
+    <p class="stack-line"><b>AI/LLM:</b> OpenRouter, YandexGPT, Ollama (LLM + Vision), prompt engineering, строгий JSON на pydantic</p>
+    <p class="stack-line"><b>Интеграции:</b> Ozon, Wildberries, Яндекс Маркет, Open-Meteo, ЦБ РФ, RSS/Atom, PDF</p>
+    <p class="stack-line"><b>Инфраструктура:</b> SQLite (aiosqlite), APScheduler, Docker, GitHub Actions, pytest</p>
+  </div>
+</section>
+
+<section id="directions">
+  <div class="container">
+    <h2>🎯 Направления</h2>
+    <div class="grid">
+      <div class="card"><p>Разработка AI-сервисов и автоматизация рутинных процессов</p></div>
+      <div class="card"><p>Интеграция внешних API и AI-моделей</p></div>
+      <div class="card"><p>Telegram-боты и Telegram Mini Apps</p></div>
+      <div class="card"><p>Backend на Python/FastAPI</p></div>
+      <div class="card"><p>LLM, Vision-модели и prompt engineering</p></div>
+      <div class="card"><p>MVP от идеи до рабочего прототипа</p></div>
+      <div class="card"><p>Отладка и доработка AI-сгенерированного кода</p></div>
+      <div class="card"><p>Данные Ozon, Wildberries и Яндекс Маркета</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>github.com/<a href="https://github.com/d3c0r1x">d3c0r1x</a> · портфолио собирается и обновляется</p>
+  </div>
+</footer>
+
+</body>
+</html>
