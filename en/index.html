@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>d3c0r1x — AI vibe coder & prototyper</title>
-<meta name="description" content="Portfolio: Telegram bots and Mini Apps, LLM and Vision, marketplace integrations. Prototypes and MVPs — from idea to a working product.">
-<meta property="og:title" content="d3c0r1x — AI vibe coder & prototyper">
-<meta property="og:description" content="Telegram bots and Mini Apps, LLM and Vision, marketplaces. Prototypes and MVPs — from idea to a working product.">
+<title>d3c0r1x — AI-first product builder</title>
+<meta name="description" content="I take a business task and ship a working product: AI integrations and LLM agents, automation, FastAPI backends, React frontends. Portfolio of three flagships plus an agent automation platform.">
+<meta property="og:title" content="d3c0r1x — AI-first product builder">
+<meta property="og:description" content="Task → architecture → working product. AI integrations and agents, automation, FastAPI and React. Three flagships and an agent automation platform.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://d3c0r1x.github.io/en/">
 <meta property="og:image" content="https://d3c0r1x.github.io/og-image.png">
@@ -61,8 +61,12 @@
   <div class="container">
     <p><a href="../">← RU</a></p>
     <h1>d3c0r1x</h1>
-    <p class="tagline"><b>AI vibe coder & prototyper.</b> I take prototypes and MVPs from idea to a working product on my own, using AI tools: Cursor, ChatGPT, OpenRouter and other LLMs.</p>
-    <p class="formula">idea → prompt → working code → debugging → shipped service</p>
+    <p class="tagline"><b>AI-first product builder.</b> I take a business task and ship a working product: architecture, API and model integrations, debugging, tests, final behaviour. AI tools are an accelerator, not a replacement for validation.</p>
+    <p class="formula">task → architecture → prototype → tests → shipped service</p>
+    <p class="tagline" style="font-size:1rem;margin-top:10px">Three flagships — <a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a> ·
+      <a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a> ·
+      <a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a> — plus an
+      <a href="https://github.com/d3c0r1x/ai-automation-platform">agent automation platform</a>.</p>
     <div class="links">
       <a class="btn btn-cta" href="https://t.me/d3c0r1x" title="Replace with your own Telegram handle">💬 Commissions & questions</a>
       <a class="btn" href="https://github.com/d3c0r1x">GitHub</a>
@@ -80,8 +84,16 @@
       <span class="chip" data-filter="ai">AI / LLM</span>
       <span class="chip" data-filter="market">Marketplaces</span>
       <span class="chip" data-filter="web">Web</span>
+      <span class="chip" data-filter="automation">Automation</span>
     </div>
     <div class="grid">
+
+      <div class="card" data-tags="ai web automation">
+        <img src="../img/ai-automation-platform.png" alt="AI Automation Platform" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/ai-automation-platform">AI Automation Platform</a><span class="star" data-repo="ai-automation-platform"></span></h3>
+        <p>"Find 20 items under 5000 ₽, compare them, pick 5, build a table and send it" — a task in plain words. The agent plans tool calls, the plan is validated before running, execution survives a crash, and anything leaving the machine waits for human approval. FastAPI, PostgreSQL, Redis, Playwright, React dashboard.</p>
+        <div class="tags"><span class="tag">LLM tool calling</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Playwright</span><span class="tag">React</span></div>
+      </div>
 
       <div class="card" data-tags="telegram ai market">
         <img src="../img/smart-shopper.png" alt="Smart Shopper" loading="lazy">
@@ -139,20 +151,6 @@
         <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Web Worker</span></div>
       </div>
 
-      <div class="card" data-tags="telegram market">
-        <img src="../img/wb-price-tracker.png" alt="WB Price Tracker" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/wb-price-tracker">WB Price Tracker</a><span class="star" data-repo="wb-price-tracker"></span></h3>
-        <p>Wildberries price and stock monitoring with daily checks and notifications; price history in SQLite, anti-bot handling via curl_cffi.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">curl_cffi</span><span class="tag">SQLite</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram">
-        <img src="../img/learning-projects.png" alt="Learning Projects" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/learning-projects">Learning Projects</a><span class="star" data-repo="learning-projects"></span></h3>
-        <p>12 Python training projects from a spec: price trackers, PDF reports, quizzes, weather, central-bank rates, news digests and the "Smart Shopper" assistant. Index, validator, code dump.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">aiogram 3</span><span class="tag">portfolio</span></div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -174,11 +172,11 @@
 <section id="stack">
   <div class="container">
     <h2>🛠 Stack</h2>
-    <p class="stack-line"><b>Backend:</b> Python 3.11+, FastAPI, TypeScript, React</p>
-    <p class="stack-line"><b>Telegram:</b> aiogram 3, Mini App (React + Vite), Telegram Stars</p>
-    <p class="stack-line"><b>AI/LLM:</b> OpenRouter, YandexGPT, Ollama (LLM + Vision), prompt engineering, strict JSON via pydantic</p>
-    <p class="stack-line"><b>Integrations:</b> Ozon, Wildberries, Yandex Market, Open-Meteo, CBR, RSS/Atom, PDF</p>
-    <p class="stack-line"><b>Infrastructure:</b> SQLite (aiosqlite), APScheduler, Docker, GitHub Actions, pytest</p>
+    <p class="stack-line"><b>Backend:</b> Python 3.11+, FastAPI, aiogram 3, TypeScript, React</p>
+    <p class="stack-line"><b>AI/LLM:</b> agentic flows with LLM tool calling, OpenRouter, Mistral, Ollama (LLM + Vision), prompt engineering, strict JSON via pydantic</p>
+    <p class="stack-line"><b>Automation:</b> background workers, queues (Redis), schedules, Playwright, webhooks, SSE progress</p>
+    <p class="stack-line"><b>Integrations:</b> Ozon, Wildberries, Yandex Market, Open-Meteo, CBR, RSS/Atom, PDF, Telegram Stars</p>
+    <p class="stack-line"><b>Infrastructure:</b> PostgreSQL, SQLite (aiosqlite), Docker Compose, GitHub Actions, pytest, ruff</p>
   </div>
 </section>
 

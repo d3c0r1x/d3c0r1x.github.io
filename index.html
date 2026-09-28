@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>d3c0r1x — AI вайб-кодер и прототипист</title>
-<meta name="description" content="Портфолио: Telegram-боты и Mini Apps, LLM и Vision, интеграции маркетплейсов. Прототипы и MVP — от идеи до работающего сервиса.">
-<meta property="og:title" content="d3c0r1x — AI вайб-кодер и прототипист">
-<meta property="og:description" content="Telegram-боты и Mini Apps, LLM и Vision, маркетплейсы. Прототипы и MVP — от идеи до работающего сервиса.">
+<title>d3c0r1x — AI-first продукт-билдер и вайб-кодер</title>
+<meta name="description" content="Беру бизнес-задачу и довожу до рабочего продукта: AI-интеграции и LLM, автоматизация и агенты, backend на FastAPI, фронтенд на React. Портфолио из трёх флагманов и платформы автоматизации.">
+<meta property="og:title" content="d3c0r1x — AI-first продукт-билдер">
+<meta property="og:description" content="Задачу → архитектуру → рабочий продукт. AI-интеграции и агенты, автоматизация, FastAPI и React. Три флагмана и платформа автоматизации на агентах.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://d3c0r1x.github.io/">
 <meta property="og:image" content="https://d3c0r1x.github.io/og-image.png">
@@ -62,8 +62,12 @@
   <div class="container">
     <p><a href="en/">EN</a> · RU</p>
     <h1>d3c0r1x</h1>
-    <p class="tagline"><b>AI вайб-кодер и прототипист.</b> Довожу прототипы и MVP от идеи до рабочего продукта с помощью AI-инструментов: Cursor, ChatGPT, OpenRouter и другие LLM.</p>
-    <p class="formula">идея → промпт → рабочий код → отладка → работающий сервис</p>
+    <p class="tagline"><b>AI-first продукт-билдер.</b> Беру бизнес-задачу и довожу её до рабочего продукта: архитектура, интеграции API и моделей, отладка, тесты, финальное поведение. AI-инструменты — ускоритель, а не замена проверке.</p>
+    <p class="formula">задача → архитектура → прототип → тесты → рабочий сервис</p>
+    <p class="tagline" style="font-size:1rem;margin-top:10px">Три флагмана — <a href="https://github.com/d3c0r1x/smart-shopper">Smart Shopper</a> ·
+      <a href="https://github.com/d3c0r1x/paint-by-numbers">Paint by Numbers</a> ·
+      <a href="https://github.com/d3c0r1x/finance-bot">Finance Bot</a> — и
+      <a href="https://github.com/d3c0r1x/ai-automation-platform">платформа автоматизации на агентах</a>.</p>
     <div class="links">
       <a class="btn btn-cta" href="https://t.me/d3c0r1x" title="Замените на свой Telegram">💬 Заказы и вопросы</a>
       <a class="btn" href="https://github.com/d3c0r1x">GitHub</a>
@@ -82,8 +86,16 @@
       <span class="chip" data-filter="ai">AI / LLM</span>
       <span class="chip" data-filter="market">Маркетплейсы</span>
       <span class="chip" data-filter="web">Web</span>
+      <span class="chip" data-filter="automation">Автоматизация</span>
     </div>
     <div class="grid">
+
+      <div class="card" data-tags="ai web automation">
+        <img src="img/ai-automation-platform.png" alt="AI Automation Platform" loading="lazy">
+        <h3><a href="https://github.com/d3c0r1x/ai-automation-platform">AI Automation Platform</a><span class="star" data-repo="ai-automation-platform"></span></h3>
+        <p>«Найди 20 товаров до 5000 ₽, сравни, выбери 5, составь таблицу и пришли» — задача обычными словами. Агент планирует вызовы инструментов, план проверяется до запуска, выполнение переживает сбой, отправка наружу ждёт подтверждения. FastAPI, PostgreSQL, Redis, Playwright, React-дашборд.</p>
+        <div class="tags"><span class="tag">LLM tool calling</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Playwright</span><span class="tag">React</span></div>
+      </div>
 
       <div class="card" data-tags="telegram ai market">
         <img src="img/smart-shopper.png" alt="Smart Shopper" loading="lazy">
@@ -141,20 +153,6 @@
         <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Web Worker</span></div>
       </div>
 
-      <div class="card" data-tags="telegram market">
-        <img src="img/wb-price-tracker.png" alt="WB Price Tracker" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/wb-price-tracker">WB Price Tracker</a><span class="star" data-repo="wb-price-tracker"></span></h3>
-        <p>Мониторинг цен и остатков Wildberries с ежедневными проверками и уведомлениями; история цен в SQLite, работа с антибот-защитой через curl_cffi.</p>
-        <div class="tags"><span class="tag">aiogram 3</span><span class="tag">curl_cffi</span><span class="tag">SQLite</span></div>
-      </div>
-
-      <div class="card" data-tags="telegram">
-        <img src="img/learning-projects.png" alt="Learning Projects" loading="lazy">
-        <h3><a href="https://github.com/d3c0r1x/learning-projects">Learning Projects</a><span class="star" data-repo="learning-projects"></span></h3>
-        <p>12 учебных проектов по ТЗ: трекеры цен, PDF-отчёты, викторины, погода, курсы ЦБ, дайджесты новостей и «Умный Шоппер». Индекс, валидатор, сводный дамп кода.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">aiogram 3</span><span class="tag">portfolio</span></div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -176,11 +174,11 @@
 <section id="stack">
   <div class="container">
     <h2>🛠 Стек</h2>
-    <p class="stack-line"><b>Backend:</b> Python 3.11+, FastAPI, TypeScript, React</p>
-    <p class="stack-line"><b>Telegram:</b> aiogram 3, Mini App (React + Vite), Telegram Stars</p>
-    <p class="stack-line"><b>AI/LLM:</b> OpenRouter, YandexGPT, Ollama (LLM + Vision), prompt engineering, строгий JSON на pydantic</p>
-    <p class="stack-line"><b>Интеграции:</b> Ozon, Wildberries, Яндекс Маркет, Open-Meteo, ЦБ РФ, RSS/Atom, PDF</p>
-    <p class="stack-line"><b>Инфраструктура:</b> SQLite (aiosqlite), APScheduler, Docker, GitHub Actions, pytest</p>
+    <p class="stack-line"><b>Backend:</b> Python 3.11+, FastAPI, aiogram 3, TypeScript, React</p>
+    <p class="stack-line"><b>AI/LLM:</b> LLM tool calling и агентные сценарии, OpenRouter, Mistral, Ollama (LLM + Vision), prompt engineering, строгий JSON на pydantic</p>
+    <p class="stack-line"><b>Автоматизация:</b> фоновые воркеры, очереди (Redis), расписания, Playwright, вебхуки, SSE-прогресс</p>
+    <p class="stack-line"><b>Интеграции:</b> Ozon, Wildberries, Яндекс Маркет, Open-Meteo, ЦБ РФ, RSS/Atom, PDF, Telegram Stars</p>
+    <p class="stack-line"><b>Инфраструктура:</b> PostgreSQL, SQLite (aiosqlite), Docker Compose, GitHub Actions, pytest, ruff</p>
   </div>
 </section>
 
@@ -188,14 +186,14 @@
   <div class="container">
     <h2>🎯 Направления</h2>
     <div class="grid">
-      <div class="card"><p>Разработка AI-сервисов и автоматизация рутинных процессов</p></div>
+      <div class="card"><p>AI-сервисы и автоматизация бизнес-процессов</p></div>
+      <div class="card"><p>Агентные сценарии: планирование, инструменты, подтверждение человеком</p></div>
       <div class="card"><p>Интеграция внешних API и AI-моделей</p></div>
+      <div class="card"><p>Backend на Python/FastAPI, фоновые воркеры и очереди</p></div>
       <div class="card"><p>Telegram-боты и Telegram Mini Apps</p></div>
-      <div class="card"><p>Backend на Python/FastAPI</p></div>
-      <div class="card"><p>LLM, Vision-модели и prompt engineering</p></div>
-      <div class="card"><p>MVP от идеи до рабочего прототипа</p></div>
-      <div class="card"><p>Отладка и доработка AI-сгенерированного кода</p></div>
-      <div class="card"><p>Данные Ozon, Wildberries и Яндекс Маркета</p></div>
+      <div class="card"><p>React/TypeScript: интерфейсы, канвас, обработка изображений</p></div>
+      <div class="card"><p>Локальный AI: Ollama, Vision-модели, OCR — данные не покидают машину</p></div>
+      <div class="card"><p>MVP от идеи до рабочего сервиса, с тестами и CI</p></div>
     </div>
   </div>
 </section>
